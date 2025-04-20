@@ -1,0 +1,71 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;              /* Permitir que se acomoden en fila o columna */
+    justify-content: center;      /* Centrado horizontal */
+    align-items: center;          /* Centrado vertical */
+    gap: 20px;
+    padding: 30px;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para cada tarjeta */
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #9ebbd6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.card-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* 🔄 Responsive: en pantallas pequeñas las cards se apilan */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 90%;               /* Más adaptable en pantallas pequeñas */
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+}
