@@ -1,10 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import Description from './components/Description'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Sidebar from './components/sidebar';
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Description/>
+    <Sidebar/>
   </StrictMode>,
-)
+);
+  
