@@ -51,7 +51,10 @@
     color: #555;
 }
 
-/* 🔄 Responsive: en pantallas pequeñas las cards se apilan */
+.card-info .alumno {
+    font-weight: bold;
+    color: #2c3e50;
+}
 @media (max-width: 768px) {
     .card-container {
         flex-direction: column;

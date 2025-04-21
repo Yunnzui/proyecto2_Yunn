@@ -19,12 +19,9 @@ const App: React.FC = () => {
     return (
         <div>
             <Sidebar />
-            <div className="main-content">
-                <h1>Contenido Principal</h1>
-                <p>Esta es la zona donde se muestra la información.</p>
-            </div>
         </div>
     );
 };
 
 export default App;
+export { App, Sidebar };
