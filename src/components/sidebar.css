@@ -40,5 +40,10 @@
 
 .main-content {
     padding: 80px 30px 30px;
-    /* deja espacio para la barra fija */
+    margin-top: 60px; 
+}
+body {
+    margin: 0;
+    background-color: #e3f2fd; /* Azul claro suave */
+    font-family: Arial, sans-serif;
 }
