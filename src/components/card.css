@@ -1,74 +1,75 @@
 .card-container {
     display: flex;
-    flex-wrap: wrap;              /* Permitir que se acomoden en fila o columna */
-    justify-content: center;      /* Centrado horizontal */
-    align-items: center;          /* Centrado vertical */
-    gap: 20px;
-    padding: 30px;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 100px auto 0; 
+    background-color: #f8f9fa;
 
-/* Estilo para cada tarjeta */
+}
+/* Contenedor de la tarjeta */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 100px auto 0;
+    background-color: #f8f9fa; 
+    border-radius: 12px;
+
+/* Tarjeta */
 .card {
     display: flex;
     flex-direction: row;
-    background-color: #9ebbd6;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #bbdefb; /* Azul claro */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(197, 67, 67, 0.1);
     overflow: hidden;
-    width: 600px;
+    width: 440px;
+    height: 150px;
     transition: transform 0.3s ease;
+    align-items: center;
 }
 
 .card:hover {
     transform: scale(1.02);
 }
 
+/* Imagen */
 .card-img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
-    background-color: #f9f9f9;
-    padding: 15px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 10px;
 }
 
+/* Información */
 .card-info {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
+    width: 100%;
 }
 
-.card-info h3 {
-    margin: 0 0 10px;
+.card-title {
     font-size: 20px;
-    color: #2c3e50;
-}
-
-.card-info p {
-    margin: 5px 0;
-    color: #555;
-}
-
-.card-info .alumno {
     font-weight: bold;
-    color: #2c3e50;
+    color: #333;
+    margin-bottom: 5px;
 }
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-    }
 
-    .card {
-        flex-direction: column;
-        width: 90%;               /* Más adaptable en pantallas pequeñas */
-        align-items: center;
-        text-align: center;
-    }
-
-    .card-img {
-        width: 100%;
-        height: auto;
-    }
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}    
 }
