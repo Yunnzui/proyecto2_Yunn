@@ -1,17 +1,27 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import Card from './components/card';
+import './index.css';
 import Sidebar from './components/sidebar';
-import Datos from './components/datos';
-
-
+import Home from './pages/home';
+import Contacto from './pages/contacto';
+import Productos from './pages/productos';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Galeria from './pages/galeria';
 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Card/>
-    <Sidebar />
-    <Datos />
+  
+    <Router>
+      <Sidebar />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/productos" element={<Productos />} />
+        <Route path="/galeria" element={<Galeria />} />
+      </Routes>
+    </Router>
+  
   </StrictMode>,
 );
   
