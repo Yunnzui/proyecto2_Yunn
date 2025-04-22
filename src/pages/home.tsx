@@ -4,7 +4,7 @@ const Inicio = () => {
     return (
         <div className="inicio-container">
             <div className="inicio-card">
-                <h1 className="inicio-title">Bienvenido a Mi Sitio</h1>
+                <h1 className="inicio-title">Bienvenido a Mi Proyecto de Evalución</h1>
                 <p className="inicio-text">
                     Explora nuestras secciones, conoce nuestros productos, visita la galería o contáctanos.
                 </p>

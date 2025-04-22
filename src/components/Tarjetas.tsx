@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import alumnosData from '../data/alumnos.json';
-import './card.css';
+import './Tarjetas.css';
 
 interface Alumno {
     titulo: string;
@@ -70,4 +70,5 @@ const Tarjetas = () => {
     );
 };
 
-export default Card;
+export default Tarjetas;
+

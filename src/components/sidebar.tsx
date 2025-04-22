@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
+
 const Sidebar: React.FC = () => {
     return (
         <div className="sidebar">
@@ -20,16 +21,15 @@ const Sidebar: React.FC = () => {
                 <li className="nav-item">
                     <Link to="/galeria"><span className="icon">📷</span></Link>
                 </li>
+                <li className="nav-item">
+                    <Link to="/tarjetas"><span className="icon">🃏</span></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/alumnos"><span className="icon">Archivo Json</span></Link>
+                </li>
             </ul>
 
-            <div className="user">
-                <img
-                    src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-                    alt="Usuario"
-                    className="avatar"
-                />
-                <span className="dropdown-icon">▼</span>
-            </div>
+        
         </div>
     );
 };
