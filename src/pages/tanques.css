@@ -1,0 +1,48 @@
+.tanques-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    padding: 2rem;
+}
+
+.tanques-card {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+.tanques-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.tanques-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.tanques-table th,
+.tanques-table td {
+    border: 1px solid #e5e7eb;
+    padding: 1rem;
+    text-align: left;
+    color: #1f2937;
+}
+
+.tanques-table th {
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+}
+.tanques-table tbody tr:hover {
+    background-color: #f3f4f6;
+}   

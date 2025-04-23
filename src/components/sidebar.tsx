@@ -25,7 +25,7 @@ const Sidebar: React.FC = () => {
                     <Link to="/tarjetas"><span className="icon">🃏</span></Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/alumnos"><span className="icon">Archivo Json</span></Link>
+                    <Link to="/tanques"><span className="icon">Archivo Json</span></Link>
                 </li>
             </ul>
 
