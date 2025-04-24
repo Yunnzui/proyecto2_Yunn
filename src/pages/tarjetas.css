@@ -1,7 +1,12 @@
+/* index.css o tarjetas.css */
+
 .tarjeta-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 12px;
 }
 
 .tarjeta {
@@ -24,7 +29,7 @@
 
 .tarjeta-info h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #003366;
 }
@@ -34,6 +39,11 @@
     font-size: 0.95rem;
 }
 
+.tarjeta-info strong {
+    color: #000;
+}
+
 .tarjeta-info span {
-    font-weight: 600;
+    font-size: 0.85rem;
+    color: #555;
 }
