@@ -1,9 +1,8 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import './Sidebar.css';
+import './sidebar.css';
 
 
-const Sidebar: React.FC = () => {
+function Sidebar() {
     return (
         <div className="sidebar">
             <div className="logo">Y</div>
@@ -29,9 +28,9 @@ const Sidebar: React.FC = () => {
                 </li>
             </ul>
 
-        
+
         </div>
     );
-};
+}
 
 export default Sidebar;
