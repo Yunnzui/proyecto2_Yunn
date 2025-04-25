@@ -29,7 +29,7 @@ const datos = [
     },
 ];
 
-const Tarjetas = () => {
+const Tarjetas: React.FC=() => {
     return (
         <div className="tarjeta-container">
             {datos.map((item, index) => (

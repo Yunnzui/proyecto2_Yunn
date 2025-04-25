@@ -2,7 +2,7 @@ import React from 'react';
 import TanqueTable from '../components/TanqueTable';
 import './tanques.css';
 
-const Tanques = () => {
+const Tanques: React.FC = () => {
     return (
         <div className="tanques-wrapper">
             <div className="tanques-card">
