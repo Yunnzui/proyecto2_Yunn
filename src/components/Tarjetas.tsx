@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import alumnosData from '../data/alumnos.json';
-import './card.css';
+import './Tarjetas.css';
 
 interface Alumno {
     titulo: string;
@@ -9,7 +8,7 @@ interface Alumno {
     imagen: string;
 }
 
-const Tarjetas = () => {
+const Tarjetas :React.FC = () => {
     const [alumnos, setAlumnos] = useState<Alumno[]>([]);
     const [vista, setVista] = useState<'tabla' | 'tarjetas'>('tabla');
 
@@ -70,4 +69,5 @@ const Tarjetas = () => {
     );
 };
 
-export default Card;
+export default Tarjetas;
+

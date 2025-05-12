@@ -1,0 +1,73 @@
+.inicio-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.inicio-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+.inicio-title {
+    font-size: 2.5rem;
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+.inicio-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.inicio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Espacio entre botones */
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #1976d2;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1565c0;
+}
+
+.btn-secundario {
+    background-color: #90caf9;
+    color: #0d47a1;
+}
+
+.btn-secundario:hover {
+    background-color: #64b5f6;
+}
+
+.btn-contacto {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-contacto:hover {
+    background-color: #388e3c;
+}

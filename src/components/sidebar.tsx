@@ -1,27 +1,36 @@
-import React from 'react';
-import './Sidebar.css'; // Asegúrate de tener este archivo de estilos
+import { Link } from 'react-router-dom';
+import './Sidebar.css';
 
-const Sidebar: React.FC = () => {
+
+function Sidebar() {
     return (
-        <div className="topbar">
-            <h2 className="topbar-title">Menú</h2>
-            <ul className="topbar-list">
-                <li className="topbar-item">Inicio</li>
-                <li className="topbar-item">Productos</li>
-                <li className="topbar-item">Contacto</li>
-                <li className="topbar-item">Galería</li>
+        <div className="sidebar">
+            <div className="logo">Y</div>
+
+            <ul className="nav">
+                <li className="nav-item active">
+                    <Link to="/home"><span className="icon">🏠</span></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/productos"><span className="icon">🥇</span></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/contacto"><span className="icon">📞</span></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/galeria"><span className="icon">📷</span></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/tarjetas"><span className="icon">🃏</span></Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/tanques"><span className="icon">Archivo Json</span></Link>
+                </li>
             </ul>
+
+
         </div>
     );
-};
+}
 
-const App: React.FC = () => {
-    return (
-        <div>
-            <Sidebar />
-        </div>
-    );
-};
-
-export default App;
-export { App, Sidebar };
+export default Sidebar;

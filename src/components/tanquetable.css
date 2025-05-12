@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(to bottom right, #dff1ff, #b3dfff);
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.table-container {
+    background: #9a4747;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(185, 208, 232);
+    /* Puedes cambiar esto si quieres que sea transparente también */
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    padding: 12px 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6f2ff;
+    color: #012b55;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
